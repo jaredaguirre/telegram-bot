@@ -49,18 +49,15 @@
             </plugin>
             
             <plugin>
-                <groupId>org.telegram</groupId>
-                <artifactId>telegrambots</artifactId>
-                <version>5.0.1</version>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.0.0</version>
                 <configuration>
-                    <archive>
-                        <manifest>
-                            <addClasspath>true</addClasspath>
-                        </manifest>
-                    </archive>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <finalName>helloworld</finalName>
                 </configuration>
             </plugin>
-            
         </plugins>
     </build>
         
