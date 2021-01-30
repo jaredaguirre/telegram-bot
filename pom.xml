@@ -31,7 +31,7 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-
+            
             <plugin>
                 <!-- Build an executable JAR -->
                 <groupId>org.apache.maven.plugins</groupId>
@@ -47,6 +47,20 @@
                     </archive>
                 </configuration>
             </plugin>
+            
+            <plugin>
+                <groupId>org.telegram</groupId>
+                <artifactId>telegrambots</artifactId>
+                <version>5.0.1</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+            
         </plugins>
     </build>
         
