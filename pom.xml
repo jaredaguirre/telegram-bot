@@ -22,6 +22,11 @@
             <artifactId>telegrambots</artifactId>
             <version>5.0.1</version>
         </dependency>
+        <dependency>
+	    <groupId>org.telegram</groupId>
+	    <artifactId>telegrambots-meta</artifactId>
+	    <version>5.0.1.1</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
