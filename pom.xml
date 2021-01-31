@@ -17,11 +17,6 @@
             <artifactId>telegrambots</artifactId>
             <version>5.0.1</version>
         </dependency>
-        <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpclient</artifactId>
-            <version>4.3.4</version>
-        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -44,23 +39,12 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <classpathPrefix>lib/</classpathPrefix>
                             <mainClass>domain.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
             </plugin>
             
-            <plugin>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <version>3.0.0</version>
-                <configuration>
-                    <descriptorRefs>
-                        <descriptorRef>jar-with-dependencies</descriptorRef>
-                    </descriptorRefs>
-                    <finalName>helloworld</finalName>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
         
